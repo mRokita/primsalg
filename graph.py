@@ -77,7 +77,7 @@ class Graph:
         return index in self.vertices
 
 
-class MinimalSpinningTree(Graph):
+class MinimalSpanningTree(Graph):
     def __init__(self, graph: Graph, start_v_id: int):
         super().__init__()
         pq = PriorityQueue()

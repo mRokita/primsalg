@@ -4,7 +4,7 @@ from graph import Graph
 import matplotlib.pyplot as plt
 
 
-class MinimalSpinningTreeDemo(Graph):
+class MinimalSpanningTreeDemo(Graph):
     def __init__(self, graph: Graph):
         super().__init__()
         self.__pq: PriorityQueue = PriorityQueue()
@@ -70,7 +70,7 @@ def get_example_graph():
 
 if __name__ == '__main__':
     try:
-        demo = MinimalSpinningTreeDemo(get_example_graph())
+        demo = MinimalSpanningTreeDemo(get_example_graph())
         demo.run(1)
     except TclError:
         pass
